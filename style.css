@@ -1,0 +1,255 @@
+.full-body{
+    width: 100%;
+    height: 130%;
+    background: #FFF;
+}
+.nav-bar{
+    width: 100%;
+    height: 90px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: rgba(16, 144, 216, 0.10);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-letter{
+    color: rgba(17, 17, 17, 0.80);
+    font-family: Inter;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    padding-left: 20px;
+}
+.nav-letter-2{
+    color: rgba(17, 17, 17, 0.60);
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+}
+
+.nav-btn{
+    width: 120px;
+    height: 48px;
+    flex-shrink: 0;
+    margin-right: 40px;
+    border-radius: 8px;
+    background: #1090D8;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+}
+.card-temp{
+    width: 100%;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FFF;
+    margin-left: 3%;
+    margin-top: 5%;
+
+}
+.card-img{
+    width: 243px;
+    height: 194px;
+    flex-shrink: 0;
+    fill: #FEFF5B;
+    padding-top: 5%;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-letter{
+    color: #414141;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 10%;
+}
+
+.card-letter-2{
+    color: #414141;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 3%;
+}
+.input-field{
+    margin-top: 5%;
+}
+.b-letter{
+    color: #414141;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-right: 5%;
+    padding-left: 10%;
+}
+.input-num{
+    height: 32px;
+    width: 70px;
+    background: #F1F1F1;
+}
+.write-cm{
+    color: #414141;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 3%;
+    padding-right: 5%;
+}
+.h-letter{
+    color: #414141;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 5%;
+    padding-right: 10%;
+}
+
+.btn-cal{
+    width: 50%;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #1090D8;
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 5%;
+}
+
+.show-field{
+    width: 98%;
+    height: 400px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1px solid rgba(17, 17, 17, 0.10);
+    background: #FFF;
+    margin-top: 5%;
+}
+
+.Area-Calculation{
+    color: rgba(17, 17, 17, 0.80);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px; /* 150% */
+    text-decoration-line: underline;
+    padding-top: 10%;
+}
+
+.margin-bottom{
+    margin-bottom: 1%;
+}
+
+.hover-element {
+    transition: background-color 0.3s;
+}
+
+ul.custom-list {
+    list-style: none;
+    counter-reset: my-counter;
+}
+  
+li.custom-list-item:before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    font-weight: bold;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    font-size: 15px;
+}
+
+.card-name{
+    color: #414141;
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px; /* 375% */
+}
+.card-result{
+    color: #414141;
+text-align: center;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: 5%;
+}
+
+.btn-cm-to-miter{
+    width: 40%;
+height: 30px;
+flex-shrink: 0;
+border-radius: 4px;
+background: #1090D8;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 3%;
+}
+#triangle-none{
+    display: none;
+}
+
+#Rectangle-none{
+    display: none;
+}
+
+#Parallelogram-none{
+    display: none;
+}
+
+#Rhombus-none{
+    display: none;
+}
+
+#Pentagon-none{
+    display: none;
+}
+
+#Ellipse-none{
+    display: none;
+}
+
+.sm-btn{
+    width: 15%;
+    height: 30px;
+    background-color: #1090D8;
+    border-radius: 5px;
+}

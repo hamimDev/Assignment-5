@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="full-body">
+    <header class=" sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">
+        <nav class="bg-green-300 p-4">
+            <div class="container mx-auto">
+                <div class="flex justify-between items-center">
+                    <div class="flex items-center">
+                        <a class="font-bold text-xl" href="#">
+                          <div>
+                            Interactive <br>
+                            <span class="nav-letter-2">Geometry Genius</span>
+                        </div>
+                        </a>
+                    </div>
+                    <button class="sm-btn" id="blog-btn-sm">
+                      Blog
+                  </button>
+                </div>
+            </div>
+        </nav> 
+    </header>
+    <header class="hidden md:block lg:block xl:block 2xl:block">
+        <div class="nav-bar">
+            <div class="nav-letter">
+                Interactive <br>
+                <span class="nav-letter-2">Geometry Genius</span>
+            </div>
+            <button class="nav-btn" id="blog-btn">
+                Blog
+            </button>
+        </div>
+    </header>
+    <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 margin-bottom">
+        <div class=" lg:order-1 card-temp hover-element" onmouseover="this.style.backgroundColor=getRandomColor()" onmouseout="this.style.backgroundColor='#FFF'">
+            <div class="center">
+                <img class="card-img " src="images/triangle.png" alt="">
+            </div>
+            <h4 class="card-letter">
+                Triangle
+            </h4>
+            <h5 class="card-letter-2">
+                Area (A) = 0.5 x b x h
+            </h5>
+            <div class="center input-field">
+                <div class="b-letter">
+                    b
+                </div>
+                <div>
+                    <input type="text" class="input-num" id="Triangle-input-1">
+                </div>
+                <h4 class="write-cm">
+                    cm
+                </h4>
+                <div>
+                    <input type="text" class="input-num" id="Triangle-input-2">
+                </div>
+                <div class="h-letter">
+                    h
+                </div>
+            </div>
+            <div class="center">
+                <button class="btn-cal" id="Triangle-btn">
+                    Calculate
+                </button>
+            </div>
+        </div>
+        <div class=" lg:order-2 card-temp hover-element" onmouseover="this.style.backgroundColor=getRandomColor()" onmouseout="this.style.backgroundColor='#FFF'">
+            <div class="center">
+                <img class="card-img " src="images/rectangle.png" alt="">
+            </div>
+            <h4 class="card-letter">
+                Rectangle
+            </h4>
+            <h5 class="card-letter-2">
+                Area (A) = w x l
+            </h5>
+            <div class="center input-field">
+                <div class="b-letter">
+                    w
+                </div>
+                <div>
+                    <input type="text" class="input-num" id="Rectangle-input-1">
+                </div>
+                <h4 class="write-cm">
+                    cm
+                </h4>
+                <div>
+                    <input type="text" class="input-num" id="Rectangle-input-2">
+                </div>
+                <div class="h-letter">
+                    l
+                </div>
+            </div>
+            <div class="center">
+                <button class="btn-cal" id="Rectangle-btn">
+                    Calculate
+                </button>
+            </div>
+        </div>
+        <div class=" lg:order-3 card-temp hover-element" onmouseover="this.style.backgroundColor=getRandomColor()" onmouseout="this.style.backgroundColor='#FFF'">
+            <div class="center">
+                <img class="card-img " src="images/parallelogram.png" alt="">
+            </div>
+            <h4 class="card-letter">
+                Parallelogram
+            </h4>
+            <h5 class="card-letter-2">
+                Area (A) = b x h
+            </h5>
+            <div class="center input-field">
+                <div class="b-letter">
+                    b
+                </div>
+                <div>
+                    <input type="text" class="input-num" id="Parallelogram-input-1">
+                </div>
+                <h4 class="write-cm">
+                    cm
+                </h4>
+                <div>
+                    <input type="text" class="input-num" id="Parallelogram-input-2">
+                </div>
+                <div class="h-letter">
+                    h
+                </div>
+            </div>
+            <div class="center">
+                <button class="btn-cal" id="Parallelogram-btn">
+                    Calculate
+                </button>
+            </div>
+        </div>
+        <div class=" lg:order-5 card-temp hover-element" onmouseover="this.style.backgroundColor=getRandomColor()" onmouseout="this.style.backgroundColor='#FFF'">
+            <div class="center">
+                <img class="card-img " src="images/rhombus.png" alt="">
+            </div>
+            <h4 class="card-letter">
+                Rhombus
+            </h4>
+            <h5 class="card-letter-2">
+                Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub>
+            </h5>
+            <div class="center input-field">
+                <div class="b-letter">
+                    d<sub>1</sub>
+                </div>
+                <div>
+                    <input type="text" class="input-num" id="Rhombus-input-1">
+                </div>
+                <h4 class="write-cm">
+                    cm
+                </h4>
+                <div>
+                    <input type="text" class="input-num" id="Rhombus-input-2">
+                </div>
+                <div class="h-letter">
+                    d<sub>2</sub>
+                </div>
+            </div>
+            <div class="center">
+                <button class="btn-cal" id="Rhombus-btn">
+                    Calculate
+                </button>
+            </div>
+        </div>
+        <div class=" lg:order-6 card-temp hover-element" onmouseover="this.style.backgroundColor=getRandomColor()" onmouseout="this.style.backgroundColor='#FFF'">
+            <div class="center">
+                <img class="card-img " src="images/pentagon.png" alt="">
+            </div>
+            <h4 class="card-letter">
+                Pentagon
+            </h4>
+            <h5 class="card-letter-2">
+                Area (A) = 0.5 x p x b
+            </h5>
+            <div class="center input-field">
+                <div class="b-letter">
+                    p
+                </div>
+                <div>
+                    <input type="text" class="input-num" id="Pentagon-input-1">
+                </div>
+                <h4 class="write-cm">
+                    cm
+                </h4>
+                <div>
+                    <input type="text" class="input-num" id="Pentagon-input-2">
+                </div>
+                <div class="h-letter">
+                    b
+                </div>
+            </div>
+            <div class="center">
+                <button class="btn-cal" id="Pentagon-btn">
+                    Calculate
+                </button>
+            </div>
+        </div>
+        <div class=" lg:order-7 card-temp hover-element" onmouseover="this.style.backgroundColor=getRandomColor()" onmouseout="this.style.backgroundColor='#FFF'">
+            <div class="center">
+                <img class="card-img " src="images/ellipse.png" alt="">
+            </div>
+            <h4 class="card-letter">
+                Ellipse
+            </h4>
+            <h5 class="card-letter-2">
+                Area (A) = πab
+            </h5>
+            <div class="center input-field">
+                <div class="b-letter">
+                    a
+                </div>
+                <div>
+                    <input type="text" class="input-num" id="Ellipse-input-1">
+                </div>
+                <h4 class="write-cm">
+                    cm
+                </h4>
+                <div>
+                    <input type="text" class="input-num" id="Ellipse-input-2">
+                </div>
+                <div class="h-letter">
+                    b
+                </div>
+            </div>
+            <div class="center">
+                <button class="btn-cal" id="Ellipse-btn">
+                    Calculate
+                </button>
+            </div>
+        </div>
+        <div class="show-field lg:order-4">
+            <div class="Area-Calculation center">
+                Area Calculation
+            </div>
+            <ul class="custom-list">
+                <li class="custom-list-item center" id="triangle-none">
+                    <div class="card-name">
+                        Triangle
+                    </div>
+                    <div class="card-result">
+                        <span id="result-show">12</span>cm<sup>3</sup>
+                    </div>
+                    <button class="btn-cm-to-miter">
+                        Covert to m<sup>2</sup>
+                    </button>
+                </li>
+                <li class="custom-list-item center" id="Rectangle-none">
+                    <div class="card-name">
+                        Rectangle
+                    </div>
+                    <div class="card-result">
+                        <span id="Rectangle-show-Result">12</span>cm<sup>3</sup>
+                    </div>
+                    <button class="btn-cm-to-miter">
+                        Covert to m<sup>2</sup>
+                    </button>
+                </li>
+                <li class="custom-list-item center" id="Parallelogram-none">
+                    <div class="card-name">
+                        Para.gram
+                    </div>
+                    <div class="card-result">
+                        <span id="Parallelogram-show-result">12</span>cm<sup>3</sup>
+                    </div>
+                    <button class="btn-cm-to-miter">
+                        Covert to m<sup>2</sup>
+                    </button>
+                </li>
+                <li class="custom-list-item center" id="Rhombus-none">
+                    <div class="card-name">
+                        Rhombus
+                    </div>
+                    <div class="card-result">
+                        <span id="Rhombus-Show-result">12</span>cm<sup>3</sup>
+                    </div>
+                    <button class="btn-cm-to-miter">
+                        Covert to m<sup>2</sup>
+                    </button>
+                </li>
+                <li class="custom-list-item center" id="Pentagon-none">
+                    <div class="card-name">
+                        Pentagon
+                    </div>
+                    <div class="card-result">
+                        <span id="Pentagon-show-result">12</span>cm<sup>3</sup>
+                    </div>
+                    <button class="btn-cm-to-miter">
+                        Covert to m<sup>2</sup>
+                    </button>
+                </li>
+                <li class="custom-list-item center" id="Ellipse-none">
+                    <div class="card-name">
+                        Ellipse
+                    </div>
+                    <div class="card-result">
+                        <span id="Ellipse-show-result">12</span>cm<sup>3</sup>
+                    </div>
+                    <button class="btn-cm-to-miter">
+                        Covert to m<sup>2</sup>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
+
